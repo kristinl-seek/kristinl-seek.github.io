@@ -13,7 +13,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .navigation-wrapper {
   height: 190px;
-  background-color: #3b5633;
+  background-color:#bf1919;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -49,6 +49,7 @@ h1,h2,h3,h4,h5,h6 {
 .nav-link {
   flex: 1;
   text-align: center;
+  width: 120px;
 }
 
 .about-me-paragraph {
@@ -102,7 +103,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .nav-link a:hover {
-  color: #bcca99;
+  color: #ad2e20;
   letter-spacing: 2px;
 }
 
