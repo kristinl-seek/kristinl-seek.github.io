@@ -29,9 +29,9 @@
 }
 
 .adjust-about-me-paragraph {
-    font-size: 24px;
-    width: 350px;
-    padding-bottom: 40px;
+    font-size: 18px;
+    width: 500px;
+    text-wrap: pretty;;
 }
 
 .adjust-about-me-image {

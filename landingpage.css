@@ -52,6 +52,18 @@ h1,h2,h3,h4,h5,h6 {
   width: 120px;
 }
 
+.navbar-footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar img {
+  width: 100%;
+  height: auto;
+}
+
+
 .about-me-paragraph {
   z-index: 99;
   padding: 40px 40px 40px 40px;
@@ -59,12 +71,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .about-me-paragraph :nth-child(1) {
-  font-size: 24px;
+  font-size:24px;
   height: 1em;
 }
 
 .about-me-paragraph :nth-child(2) {
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 600;
   height: 1em;
   line-height: .9em;
@@ -177,28 +189,33 @@ h1,h2,h3,h4,h5,h6 {
   height: 600x;
 }
 
+/*
+.footer {
+  background-color:#1F1E1E;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-content a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-content i {
+  font-size: 24px;
+}
+
 .footer-wrapper {
   display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: #1F1E1E;
   color: white;
-  padding: 20px 20% 40px 20%;
 }
-
-.footer-name {
-  font-size: 48px;
-}
-
-.footer-name :nth-child(2) {
-  font-size: 24px;
-}
-
-.footer-column-2 {
-  font-size: 24px;
-  align-items: flex-end;
-  margin: 60px 15% 20px 35%;
-  line-height: 40px;
-}
-
+*/
 a{
   text-decoration: none;
   color:  #fff; 
@@ -245,17 +262,37 @@ a:hover {
   color: #ad2e20;
 }
 
-/*Gallery CSS*/
+/* Gallery CSS
 css
 
 /* The grid container that holds all project items */
 .projects-grid {
-    display: grid; /* Turns this div into a grid container */
+  margin-top: 50px;
+  margin-right: 10%;
+  display: grid; /* Turns this div into a grid container */
     grid-template-columns: repeat(4, 1fr); /* Creates 4 equal-width columns */
     grid-auto-rows: auto; /* Automatically adjusts the row height based on content */
     gap: 20px; /* Adds a 20px space between each grid item */
 }
 
+/*Stylings for h1 in gallery grid*/
+h1 {
+  margin-top: 50px;
+  display: block;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+
+.thumbnail {
+  width: 100px;
+  height: 100px;
+}
 /* Each individual project item */
 .project {
     position: relative; /* Allows positioning of child elements relative to this container */
@@ -302,4 +339,5 @@ css
 .project a {
     display: block; /* Ensures the link covers the entire project item */
     color: inherit; /* Keeps the text color from the parent (usually white) */
-    text-decoration: none; /* Removes the underline from the text */
+    text-decoration: none; /* Removes the underline from the text*/
+}
