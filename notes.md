@@ -296,3 +296,121 @@ This is the code that I wrote for my original About me page.
 </body>
 
 </html>--> 
+
+<!-->
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #b3b3b1;
+    color: rgb(6, 0, 0);
+    padding: 20px; 
+    width: 100%;
+    margin: 0 auto; 
+    box-shadow: 0px 4 px 6px rgba(0,0,0,0.2);
+    flex-wrap: wrap;
+  }
+  
+  header img{
+    border-radius: 50%;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    max-width: 100%;
+    height: auto; 
+    object-fit: cover;
+  }
+  
+  .centerHeader{
+    text-align: center; 
+  }
+  
+  .intro{
+    max-width: 500px;
+    text-align: center;
+  }
+  *Styling for Main *
+  
+  .bodySections{
+    padding: 10px;
+    width:80%;
+    *align-items:center;*
+    justify-content: space-evenly;
+    display: flex;
+  }
+  
+  main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+  }
+  
+  *Styling for section*
+  section{
+    background-color: #fefefe;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+    padding: 20px;
+    margin-bottom: 20px; * adds space at the BOTTOM of each "card" *
+    width:100%;/* makes the section take up the full width of the MAIN container    *
+    max-width: 800px; /* Limits the width to a MAX of 800px*
+  }
+  
+  .h1Styling{
+    font-size : 50px;
+    font-style: italic;
+  }
+  /*h2{
+    border : solid brown 2px ;
+    width :fit-content;
+  }*
+  
+  .skillsSection{
+    background-color: white;
+  }
+  .skills{
+   /* border: dashed hotpink 3px;*
+  }
+  footer{
+    background-color: #E3F6CB;
+    height : 20px;
+    font-size : 20px;
+  }
+  .centerFooter{
+    text-align: center;
+  }
+  .linkedinStyling{
+    text-decoration : none;
+  }
+  
+  body {
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .text-over-image {
+      position: relative;
+  }
+  .text-over-image{
+      position: absolute;
+      top: 10;
+      left: 0;
+      width: 10%;
+      height: 10%;
+      z-index: -1; /* Send image to the background *
+    }
+  
+    footer {
+      background-color: rgb(250, 251, 251);
+      height: 100px;
+      font-size:40px;
+    }
+    .centerFooter {
+      text-align: center;
+    }
+    
+  a{
+    text-decoration: none;
+    color:rgb(168, 12, 12);
+  }
+  -->

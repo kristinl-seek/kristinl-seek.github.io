@@ -245,120 +245,61 @@ a:hover {
   color: #ad2e20;
 }
 
-/*
-header {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #b3b3b1;
-    color: rgb(6, 0, 0);
-    padding: 20px; 
-    width: 100%;
-    margin: 0 auto; 
-    box-shadow: 0px 4 px 6px rgba(0,0,0,0.2);
-    flex-wrap: wrap;
-  }
-  
-  header img{
-    border-radius: 50%;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
-    max-width: 100%;
-    height: auto; 
-    object-fit: cover;
-  }
-  
-  .centerHeader{
-    text-align: center; 
-  }
-  
-  .intro{
-    max-width: 500px;
-    text-align: center;
-  }
-  *Styling for Main *
-  
-  .bodySections{
-    padding: 10px;
-    width:80%;
-    *align-items:center;*
-    justify-content: space-evenly;
-    display: flex;
-  }
-  
-  main{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 30px;
-  }
-  
-  *Styling for section*
-  section{
-    background-color: #fefefe;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
-    padding: 20px;
-    margin-bottom: 20px; * adds space at the BOTTOM of each "card" *
-    width:100%;/* makes the section take up the full width of the MAIN container    *
-    max-width: 800px; /* Limits the width to a MAX of 800px*
-  }
-  
-  .h1Styling{
-    font-size : 50px;
-    font-style: italic;
-  }
-  /*h2{
-    border : solid brown 2px ;
-    width :fit-content;
-  }*
-  
-  .skillsSection{
-    background-color: white;
-  }
-  .skills{
-   /* border: dashed hotpink 3px;*
-  }
-  footer{
-    background-color: #E3F6CB;
-    height : 20px;
-    font-size : 20px;
-  }
-  .centerFooter{
-    text-align: center;
-  }
-  .linkedinStyling{
-    text-decoration : none;
-  }
-  
-  body {
-    margin: 0 auto;
-    padding: 0;
-  }
-  
-  .text-over-image {
-      position: relative;
-  }
-  .text-over-image{
-      position: absolute;
-      top: 10;
-      left: 0;
-      width: 10%;
-      height: 10%;
-      z-index: -1; /* Send image to the background *
-    }
-  
-    footer {
-      background-color: rgb(250, 251, 251);
-      height: 100px;
-      font-size:40px;
-    }
-    .centerFooter {
-      text-align: center;
-    }
-    
-  a{
-    text-decoration: none;
-    color:rgb(168, 12, 12);
-  }
-  -->
+/*Gallery CSS*/
+css
+
+/* The grid container that holds all project items */
+.projects-grid {
+    display: grid; /* Turns this div into a grid container */
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 equal-width columns */
+    grid-auto-rows: auto; /* Automatically adjusts the row height based on content */
+    gap: 20px; /* Adds a 20px space between each grid item */
+}
+
+/* Each individual project item */
+.project {
+    position: relative; /* Allows positioning of child elements relative to this container */
+    overflow: hidden; /* Ensures content doesn't spill outside of the container */
+    border-radius: 10px; /* Rounds the corners of the project box */
+    transition: transform 0.3s; /* Smooth transitions for any future transformations (like hover effects) */
+}
+
+/* The image inside each project */
+.project img {
+    width: 100%; /* Ensures the image takes up the full width of its container */
+    height: auto; /* Maintains the image's aspect ratio */
+    display: block; /* Ensures no extra space below the image */
+    border-radius: 10px; /* Rounds the image's corners to match the project box */
+    transition: opacity 0.3s; /* Adds a smooth transition when the image opacity changes on hover */
+}
+
+/* The description box that appears on hover */
+.project .description {
+    position: absolute; /* Allows this element to be placed over the image */
+    bottom: 0; /* Anchors the description to the bottom of the project box */
+    left: 0; /* Stretches the description from the left */
+    right: 0; /* Stretches the description to the right */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background (70% opacity) */
+    color: #fff; /* White text color */
+    text-align: center; /* Centers the text horizontally */
+    padding: 10px; /* Adds padding inside the description for spacing */
+    opacity: 0; /* Initially hidden (fully transparent) */
+    transition: opacity 0.3s; /* Adds a smooth transition when the description appears */
+    border-radius: 0 0 10px 10px; /* Rounds the bottom corners of the description to match the project box */
+}
+
+/* Hover effect on the project: makes the image slightly transparent */
+.project:hover img {
+    opacity: 0.7; /* Reduces the image opacity on hover */
+}
+
+/* Hover effect on the project: shows the description */
+.project:hover .description {
+    opacity: 1; /* Makes the description fully visible on hover */
+}
+
+/* Makes the entire project item clickable, linking to a new page */
+.project a {
+    display: block; /* Ensures the link covers the entire project item */
+    color: inherit; /* Keeps the text color from the parent (usually white) */
+    text-decoration: none; /* Removes the underline from the text */
