@@ -53,26 +53,28 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .about-me-paragraph {
-  padding-bottom: 40px;
   z-index: 99;
-  padding: 40px 40px 40px 20%;
+  padding: 40px 40px 40px 40px;
+
 }
 
 .about-me-paragraph :nth-child(1) {
-  font-size: 36px;
+  font-size: 24px;
   height: 1em;
 }
 
 .about-me-paragraph :nth-child(2) {
-  font-size: 86px;
+  font-size: 40px;
   font-weight: 600;
-  height: 1.2em;
+  height: 1em;
   line-height: .9em;
 }
 
 .about-me-paragraph :nth-child(3) {
-  font-size: 24px;
-  width: 350px;
+  font-size: 18px;
+  width: 500px;
+  margin-top: 10px;
+  text-wrap: pretty;
 }
 
 .logo img {
@@ -228,7 +230,6 @@ a:hover {
   background-color: teal;
   font-weight: bold;
   font-size: 12px;
-
 }
 
 .about-me-image {
@@ -238,7 +239,11 @@ a:hover {
 }
 
 
-
+.testimonials {
+  font-size: 11px; 
+  font-family: 'Roboto', sans-serif;
+  color: #ad2e20;
+}
 
 /*
 header {
