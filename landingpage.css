@@ -11,6 +11,7 @@ h1,h2,h3,h4,h5,h6 {
   font-family: 'Roboto Slab', serif;
 }
 
+
 .navigation-wrapper {
   height: 190px;
   background-color:#bf1919;
@@ -20,6 +21,10 @@ h1,h2,h3,h4,h5,h6 {
   align-items: center;
   padding: 60px 100px;
 }
+main {
+  min-height: 80vh; /* 80% of the viewport height */
+}
+
 
 /*
 #greeting {
@@ -271,8 +276,9 @@ css
   margin-right: 10%;
   display: grid; /* Turns this div into a grid container */
     grid-template-columns: repeat(4, 1fr); /* Creates 4 equal-width columns */
-    grid-auto-rows: auto; /* Automatically adjusts the row height based on content */
+    grid-auto-rows: 1fr; /* Automatically adjusts the row height based on content */
     gap: 20px; /* Adds a 20px space between each grid item */
+    aspect-ratio: 1;
 }
 
 /*Stylings for h1 in gallery grid*/
@@ -340,4 +346,46 @@ h1 {
     display: block; /* Ensures the link covers the entire project item */
     color: inherit; /* Keeps the text color from the parent (usually white) */
     text-decoration: none; /* Removes the underline from the text*/
+}
+
+/* Default for all screen sizes */
+body {
+  font-size: 16px;
+  background-color: #1F1E1E;
+}
+/* Extra Small: Phones */
+@media (max-width: 575px) {
+  body {
+    font-size: 14px;
+  }
+}
+/* Small: Phones and Smaller Tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+  body {
+    font-size: 15px;
+  }
+}
+/* Medium: Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    font-size: 16px;
+  }
+}
+/* Large: Small Laptops and Desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  body {
+    font-size: 18px;
+  }
+}
+/* Extra Large: Larger Desktops */
+@media (min-width: 1200px) and (max-width: 1599px) {
+  body {
+    font-size: 20px;
+  }
+}
+/* Extra Extra Large: Very Large Monitors */
+@media (min-width: 1600px) {
+  body {
+    font-size: 22px;
+  }
 }
