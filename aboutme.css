@@ -1,52 +1,45 @@
 .nav-bar {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: #1F1E1E;
     color: white;
- }
- 
- .about-container {
-    margin: 40px;
-    padding-left: 15%;
 }
 
-.about-title {
-    font-size: 36px;
-    height: 1em
+div {
+    display: block;
+    unicode-bidi: isolate;
 }
 
- body {
+.footer-wrapper {
+    display: flex;
+    background-color: #1F1E1E;
+    color: white;
+    padding: 20px 20% 40px 20%;
+}
+
+body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
 
-.about-me-image {
+.about-container {
+    margin: 40px;
+    padding-left: 15%;
+}
+
+user agent stylesheet
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+.header-wrapper {
     display: flex;
-    margin-right: 10%;
-    margin-top: 40px;
+    background-color: #1F1E1E;
+    color: white;
 }
-
-.adjust-about-me-paragraph {
-    font-size: 18px;
-    width: 500px;
-    text-wrap: pretty;;
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
-
-.adjust-about-me-image {
-    z-index: 1;
-    margin: 20px 60px 60px 60px;
-}
-
-.about-me-fixed {
-    padding-bottom: 40px;
-    z-index: 99;
-    padding: 40px 40px 40px 20%;
-  }
-
-  .fixed-profile-photo {
-    z-index: 1;
-    margin: 60px;
-    padding-top: 20px;
-  }
