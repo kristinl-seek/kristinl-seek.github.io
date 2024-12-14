@@ -1,76 +1,135 @@
-   
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport"   content="width=device-width, initial-scale=1.0">
-        <title>About Me</title>
-        <link rel="stylesheet" href="landingpage.css">
-        <link rel="stylesheet" href="aboutme.css">
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./LI author headshot.jfif"
+      type="image/x-icon"
+      style="border-radius: 100%"
+    />
+    <title>About Me - Kristin Portfolio</title>
+    <link rel="stylesheet" href="aboutme.css" />
+    <link rel="stylesheet" href="landingpage.css" />
+    <script src="./js/app.js" defer></script>
+  </head>
 
-    <body>
-        <header>
-            <!--Nav Bar-->
-            <div class="nav-bar">
-                <div class="link-wrapper">
-                    <div class="nav-link">
-                        <a href="/index.html">Home</a>
-                    </div>
+  <body>
+    <header>
+      <!--Nav Bar-->
+      <div class="nav-bar">
+        <div class="link-wrapper">
+          <div class="nav-link">
+            <a href="/index.html">Home</a>
+          </div>
 
-                    <div class="nav-link">
-                        <a href="#">About</a>
-                    </div>
-                  
-                    <div class="nav-link">
-                        <a href="/contact.html">Portfolio</a>
-                    </div>
+          <div class="nav-link">
+            <a href="#">About</a>
+          </div>
 
-                    <div class="nav-link">
-                        <a href="/podcast.html">Podcast</a>
-                    </div>
-                </div>
-            </div>
-        </header>
+          <div class="nav-link">
+            <a href="/contact.html">Portfolio</a>
+          </div>
 
-        <div class="header-wrapper">
-            <div class="about-me-paragraph">
-                <p>About Me</p>
-                <p>Mom | Guitars | Poetry | Nature</p>
-                <p> Single mom, part-time guitar hero, and full-time adventurer. When I'm not developing engaging e-Learning content, you can find me juggling my kids schedules and pretending to be a rock star, I’m always on the lookout for the next great outdoor escapade. I've published a poetry book, and I'm pretty sure my daughter has a higher Duolingo day streak for learning Turkish. Whether it’s shredding a riff or shredding a mountain, I’m happiest when I’m having fun with my family. Let’s connect over virtual coffee, good music, or a great hike!
-                </p>
-            </div>
-            <div class="fixed-profile-photo">
-                <img src="/assets/about me image.jpg" height="300px">               
-            </div>
+          <div class="nav-link">
+            <a href="/podcast.html">Podcast</a>
+          </div>
         </div>
-        <footer>
-            <div class="nav-bar">
-                <div class="link-wrapper">
-                    <div class="nav-link">
-                        <a href="https://www.linkedin.com/in/kristin-lillywhite" target="_blank">
-                        <img src="/assets/icons8-linkedin-50.png" alt="Linkedin logo">
-                        </a>
-                    </div>
-                    <div class="nav-link">
-                        <a href="https://github.com/kristinl-seek/kristinl-seek.github.io" target="_blank">
-                        <img src="/assets/GitHub_Invertocat_Light.png" alt="Link to GitHub Profile" width="50" hieght="50">
-                        </a>
-                    </div>
-                    <div class="nav-link">
-                        <a href="mailto:your-kristinlillywhite@gmail.com" target="_blank">
-                        <img src="https://i0.wp.com/3factsinc.org/wp-content/uploads/2019/12/crop-0-0-1000-1080-0-email-icon-outline-email-icon-isolated-on-white-vector-21742596.png?ssl=1" width="50" hieght="50">
-                        </a>
-                    </div>
-                </div>
-            </div>
-         </footer> 
-        <!--Footer-->
- 
-            
-            <!--
+
+        <!-- Hamburger menu -->
+        <div class="hamburger-menu" id="hamburger-menu">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+
+        <!-- Popup Content -->
+        <div class="nav-popup">
+          <div class="nav-link">
+            <a href="/index.html">Home</a>
+          </div>
+
+          <div class="nav-link">
+            <a href="#">About</a>
+          </div>
+
+          <div class="nav-link">
+            <a href="/contact.html">Portfolio</a>
+          </div>
+
+          <div class="nav-link">
+            <a href="/podcast.html">Podcast</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="header-wrapper">
+        <div class="about-me-paragraph">
+          <p>About Me</p>
+          <p>Mom | Guitars | Poetry | Nature</p>
+          <p>
+            Single mom, part-time guitar hero, and full-time adventurer. When
+            I'm not developing engaging e-Learning content, you can find me
+            juggling my kids schedules and pretending to be a rock star, I’m
+            always on the lookout for the next great outdoor escapade. I've
+            published a poetry book, and I'm pretty sure my daughter has a
+            higher Duolingo day streak for learning Turkish. Whether it’s
+            shredding a riff or shredding a mountain, I’m happiest when I’m
+            having fun with my family. Let’s connect over virtual coffee, good
+            music, or a great hike!
+          </p>
+        </div>
+        <div class="fixed-profile-photo">
+          <img src="/assets/about me image.jpg" />
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="nav-bar">
+        <div class="link-wrapper">
+          <div class="nav-link">
+            <a
+              href="https://www.linkedin.com/in/kristin-lillywhite"
+              target="_blank"
+            >
+              <img src="/assets/icons8-linkedin-50.png" alt="Linkedin logo" />
+            </a>
+          </div>
+          <div class="nav-link">
+            <a
+              href="https://github.com/kristinl-seek/kristinl-seek.github.io"
+              target="_blank"
+            >
+              <img
+                src="/assets/GitHub_Invertocat_Light.png"
+                alt="Link to GitHub Profile"
+                width="50"
+                hieght="50"
+              />
+            </a>
+          </div>
+          <div class="nav-link">
+            <a href="mailto:your-kristinlillywhite@gmail.com" target="_blank">
+              <img
+                src="https://i0.wp.com/3factsinc.org/wp-content/uploads/2019/12/crop-0-0-1000-1080-0-email-icon-outline-email-icon-isolated-on-white-vector-21742596.png?ssl=1"
+                width="50"
+                hieght="50"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <p>&copy; 2024, All rights reserved by Kristin Lillywhite</p>
+    </footer>
+    <!--Footer-->
+
+    <!--
             <script src="index.js"></script>-->
-            
-    </body>
+  </body>
 </html>
