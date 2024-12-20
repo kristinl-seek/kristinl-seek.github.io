@@ -354,16 +354,6 @@ a:hover {
   height: 600px !important;
 }
 
-/* The grid container that holds all project items */
-.projects-grid {
-  margin-top: 50px;
-  margin-right: 10%;
-  display: grid; /* Turns this div into a grid container */
-  grid-template-columns: repeat(3, 1fr); /* Creates 4 equal-width columns */
-  grid-auto-rows: 1fr; /* Automatically adjusts the row height based on content */
-  gap: 50px; /* Adds a 20px space between each grid item */
-}
-
 /*Stylings for h1 in gallery grid*/
 h1 {
   margin-top: 50px;
@@ -381,60 +371,6 @@ h1 {
 .thumbnail {
   width: 100px;
   height: 100px;
-}
-/* Each individual project item */
-.project {
-  position: relative; /* Allows positioning of child elements relative to this container */
-  overflow: hidden; /* Ensures content doesn't spill outside of the container */
-  border-radius: 10px; /* Rounds the corners of the project box */
-  transition: transform 0.3s; /* Smooth transitions for any future transformations (like hover effects) */
-}
-
-/* The image inside each project */
-.project img {
-  width: 100%; /* Ensures the image takes up the full width of its container */
-  height: 100px; /* Maintains the image's aspect ratio */
-  display: block; /* Ensures no extra space below the image */
-  border-radius: 10px; /* Rounds the image's corners to match the project box */
-  transition: opacity 0.3s; /* Adds a smooth transition when the image opacity changes on hover */
-}
-
-/* The description box that appears on hover */
-.project .description {
-  position: absolute; /* Allows this element to be placed over the image */
-  bottom: 0; /* Anchors the description to the bottom of the project box */
-  left: 0; /* Stretches the description from the left */
-  right: 0; /* Stretches the description to the right */
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.7
-  ); /* Semi-transparent black background (70% opacity) */
-  color: #fff; /* White text color */
-  text-align: center; /* Centers the text horizontally */
-  padding: 10px; /* Adds padding inside the description for spacing */
-  opacity: 0; /* Initially hidden (fully transparent) */
-  transition: opacity 0.3s; /* Adds a smooth transition when the description appears */
-  border-radius: 0 0 10px 10px; /* Rounds the bottom corners of the description to match the project box */
-  font-size: 10px;
-}
-
-/* Hover effect on the project: makes the image slightly transparent */
-.project:hover img {
-  opacity: 0.7; /* Reduces the image opacity on hover */
-}
-
-/* Hover effect on the project: shows the description */
-.project:hover .description {
-  opacity: 1; /* Makes the description fully visible on hover */
-}
-
-/* Makes the entire project item clickable, linking to a new page */
-.project a {
-  display: block; /* Ensures the link covers the entire project item */
-  color: inherit; /* Keeps the text color from the parent (usually white) */
-  text-decoration: none; /* Removes the underline from the text*/
 }
 
 /* Default for all screen sizes */
